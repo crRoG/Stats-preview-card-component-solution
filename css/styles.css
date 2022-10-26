@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: hsl(233deg, 47%, 7%);
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: hsl(0deg, 0%, 100%);
+}
+.container .picture {
+  width: 54rem;
+  height: 45rem;
+  position: relative;
+}
+.container .picture .img-desktop {
+  border-radius: 0 1rem 1rem 0;
+}
+.container .picture .img-mobile {
+  display: none;
+}
+.container .picture .layer {
+  width: 54rem;
+  height: 44.6rem;
+  background-color: hsl(277deg, 64%, 61%);
+  position: absolute;
+  top: 0;
+  opacity: 0.6;
+  border-radius: 0 1rem 1rem 0;
+}
+.container .card {
+  width: 54rem;
+  height: 45rem;
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 1rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem 6rem 3rem 7.5rem;
+}
+.container .card .title {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.container .card .title span {
+  color: hsl(277deg, 64%, 61%);
+  font-weight: 700;
+}
+.container .card .text {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  margin-top: -4rem;
+  line-height: 2.7rem;
+  padding-right: 1rem;
+}
+.container .card .Kpis {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.container .card .Kpis .k-2 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.container .card .Kpis .k-number {
+  text-emphasis: hsl(0deg, 0%, 100%);
+}
+.container .card .Kpis .k-text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .picture {
+    width: 37.5rem;
+    height: auto;
+  }
+  .container .picture .img-desktop {
+    display: none;
+  }
+  .container .picture .img-mobile {
+    display: block;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .container .picture .layer {
+    width: 37.5rem;
+    height: 27.523rem;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .container .card {
+    width: 37.5rem;
+    height: auto;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem 4rem 1rem 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .card .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .container .card .text {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .container .card .Kpis {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .container .card .Kpis .k-2 {
+    margin: 0;
+  }
+  .container .card .Kpis h2 {
+    margin-top: 3rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
